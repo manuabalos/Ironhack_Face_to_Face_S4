@@ -1,0 +1,20 @@
+<h1> Comments Index</h1>
+<button class="action-button" id="reload-button">Reload!</button>
+<ul>
+	<% @comments.each do |comment| %>
+		<li><%=comment.author %> says: <%=comment.text %></li>
+	<% end %>
+</ul>
+
+<hr>
+	<p>
+		<label for="author">Author</label>
+		<input type="text" name="author" id="author">
+	</p>
+
+	<p>
+		<label for="text">Text</label>
+		<p><textarea name="text" id="text"></textarea></p>
+	</p>
+</hr>
+<button id="button-send">ENVIAR</button>

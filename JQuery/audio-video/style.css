@@ -1,0 +1,11 @@
+video{
+	display: block;
+	margin: auto;
+	width: 30%;
+	height: 20%;
+}
+
+button{
+	display: block;
+	margin: auto;
+}

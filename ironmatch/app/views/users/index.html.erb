@@ -1,0 +1,19 @@
+<section class="container-fluid">
+	<div class="col-md-12 center-textimg">
+		<h3>User List</h3>
+	</div>
+	<% @users.each do |user| %>
+		<div class="col-md-3 center-textimg">
+			<div>
+				<img src=<%= user.photo %> class="img-size img-circle"> 
+			</div>
+
+			<div>
+				<h3><%= user.name %></h3>
+				<p>Age <%= user.age %></p>
+				<a href= <%= user_path(user) %>><button type="button" class="btn btn-primary">View Profile</button></a>
+				<hr>
+			</div>
+		</div>
+	<% end %>
+</section>

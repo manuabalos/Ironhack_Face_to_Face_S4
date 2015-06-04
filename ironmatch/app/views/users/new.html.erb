@@ -1,0 +1,27 @@
+<h1> New </h1>
+
+<%= form_for @user do |f| %>
+
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<br>
+	<%= f.label :age %>
+	<%= f.text_field :age %>
+	<br>
+
+	<%= f.label :food %>
+	<%= f.text_field :food %>
+	<br>
+
+	<%= f.label :lenguage %>
+	<%= f.select :lenguage, options_for_select(@lenguages)%>
+		
+		
+	<br>
+	<%= f.label :photo %>
+	<%= f.text_field :photo %>
+	<br>
+
+	<%= f.submit 'Save' %>
+	<p><%= link_to("Back to Home", root_path) %></p>
+<% end %>
